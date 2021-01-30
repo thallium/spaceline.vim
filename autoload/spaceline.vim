@@ -103,7 +103,7 @@ function! s:ActiveStatusLine()
     let s:statusline.=g:sep.lineformatright
     let s:statusline.="%#StatusLineinfo#%{spaceline#file#file_type()}"
     let s:statusline.="%#EndSeperate#"
-    let s:statusline.="%{spaceline#scrollbar#scrollbar_instance()}"
+    " let s:statusline.="%{spaceline#scrollbar#scrollbar_instance()}"
     return s:statusline
 endfunction
 

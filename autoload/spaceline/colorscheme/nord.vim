@@ -13,8 +13,9 @@ function! spaceline#colorscheme#nord#nord()
   let s:slc.purple    = ['b48ead', 251]
   let s:slc.orange    = ['d08770', 208]
   let s:slc.red       = ['bf616a', 203]
-  let s:slc.blue      = ['81a1c1', 32]
+  let s:slc.blue      = ['81a1c1', 225]
   let s:slc.cyan      = ['88c0d0', 225]
+  let s:slc.green     = ['8FBCBB', 225]
   let s:slc.darknavy  = []
 
   call spaceline#colors#match_background_color(s:slc.darknavy)
@@ -82,11 +83,11 @@ function! spaceline#colorscheme#nord#nord()
 
   call spaceline#colors#spaceline_hl('InActiveFilename', s:slc, 'cyan', 'gray')
   call spaceline#colors#spaceline_hl('FileName', s:slc, 'black', 'cyan')
-  call spaceline#colors#spaceline_hl('Filesize', s:slc, 'purple', 'gray')
+  call spaceline#colors#spaceline_hl('Filesize', s:slc, 'white', 'gray')
   call spaceline#colors#spaceline_hl('HeartSymbol', s:slc, 'orange',  'gray')
   call spaceline#colors#spaceline_hl('CocError',s:slc,  'red',  'gray')
   call spaceline#colors#spaceline_hl('CocWarn',s:slc,  'yellow',  'gray')
-  call spaceline#colors#spaceline_hl('GitBranchIcon', s:slc, 'orange',  'cyan')
+  call spaceline#colors#spaceline_hl('GitBranchIcon', s:slc, 'blue',  'cyan')
   call spaceline#colors#spaceline_hl('GitInfo',s:slc,  'black',  'cyan')
   call spaceline#colors#spaceline_hl('GitAdd',s:slc,  'purple',  'cyan')
   call spaceline#colors#spaceline_hl('GitRemove',s:slc,  'red',  'cyan')

@@ -9,7 +9,7 @@ let s:change = 0
 let s:delete = 0
 
 function! spaceline#vcs#git_branch_icon()
-  return g:spaceline_branch_icon
+  return ' '
 endfunction
 
 " reference https://github.com/itchyny/vim-gitbranch/blob/master/plugin/gitbranch.vim

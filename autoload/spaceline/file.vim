@@ -24,7 +24,8 @@ endfunction
 function! s:line_column()
   let l:line = line('.')
   let l:column = col('.')
-  return ' '.l:line.':'.l:column.' | '
+  let l:total = line("$")
+  return '  '.l:line . '/'. l:total .':'.l:column.' | '
 endfunction
 
 function! s:line_percent()
